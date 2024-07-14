@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/adminprofile"
+            android:title="Admin Profile"
+            android:icon="@drawable/baseline_campaign_24" />
+        <item
+            android:id="@+id/addadmin"
+            android:title="Add Admin"
+            android:icon="@drawable/baseline_add_24" />
+        <item
+            android:id="@+id/viewallorders"
+            android:title="View All Orders"
+            android:icon="@drawable/baseline_pageview_24" />
+        <item
+            android:id="@+id/addspecialoffers"
+            android:title="Add Special Offers"
+            android:icon="@drawable/baseline_ballot_24" />
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/baseline_arrow_outward_24" />
+    </group>
+</menu>

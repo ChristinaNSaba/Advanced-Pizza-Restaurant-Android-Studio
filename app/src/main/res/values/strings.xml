@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">LItaliano Restaurant</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!-- Size options -->
+    <string-array name="size_options">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <!-- Quantity options -->
+    <string-array name="quantity_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Toppings options -->
+    <string-array name="toppings_options">
+        <item>None</item>
+        <item>Extra Cheese</item>
+        <item>Mushrooms</item>
+        <item>Pepperoni</item>
+    </string-array>
+</resources>

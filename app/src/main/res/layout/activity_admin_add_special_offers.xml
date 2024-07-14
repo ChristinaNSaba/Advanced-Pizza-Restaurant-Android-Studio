@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AdminAddSpecialOffersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Add a Special Offer"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true" />
+
+            <Spinner
+                android:id="@+id/spinnerPizzaType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerPizzaSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerPizzaType"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:id="@+id/editTextOfferPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Offer Period (e.g., June 12-18)"
+                android:layout_below="@id/spinnerPizzaSize"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:id="@+id/editTextTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Price"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/editTextOfferPeriod"
+                android:layout_marginTop="30dp" />
+
+            <Button
+                android:id="@+id/buttonAddOffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTotalPrice"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:background="#008000"
+                android:layout_gravity="center"
+                android:text="Add Offer"
+                android:textColor="@color/white" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="218dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/tick" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/admin_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

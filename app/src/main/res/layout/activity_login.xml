@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/loginpage"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Email"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="26dp"
+        android:textStyle="bold"
+        android:text="Remember Me" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="310dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxRememberMe"
+        android:layout_marginTop="80dp"
+        android:background="#008000"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="470dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Don't have an account yet?"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="310dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="80dp"
+        android:background="#FF0000"
+        android:text="Sign Up"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="694dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Image View -->
+        <ImageView
+            android:id="@+id/pizza_image"
+            android:layout_width="310dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <!-- Description Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="424dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <!-- Name -->
+
+            <TextView
+                android:id="@+id/pizza_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza_description"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fadeScrollbars="false"
+                android:maxLines="8"
+                android:scrollbarSize="4dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="16dp"
+                android:background="#FF0000"
+                android:text="X"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
